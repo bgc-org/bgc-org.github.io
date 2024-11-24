@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт разработчика Android</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">BGC</div>
+    </header>
+    <div class="container">
+        <div class="content main-content">
+            <div class="text-section">
+                <h1>Добро пожаловать на мой сайт</h1>
+                <p>Я — разработчик Android с опытом работы более [X] лет. Специализируюсь на создании мобильных приложений для различных платформ.</p>
+            </div>
+            <div class="video-section">
+                <video id="profileVideo" autoplay loop class="profile-video">
+                    <source src="2024-11-24 00-55-38.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p>&copy; 2024 BGC. Все права защищены.</p>
+                <p>Email: <a href="mailto:bgc.org.development@gmail.com">bgc.org.development@gmail.com</a></p>
+                <p>Telegram: <a href="https://t.me/btgc_bot" class="telegram-link">@btgc_bot</a></p>
+                <p>GitHub: <a href="https://github.com/bgc-org" target="_blank">bgc-org</a></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('profileVideo');
+
+            video.addEventListener('ended', function() {
+                setTimeout(function() {
+                    video.currentTime = 0;
+                    video.play();
+                }, 10000); // 5 секунд
+            });
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>

@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт разработчика Android</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Redirect</title>
+    <script>
+        // Функция для перенаправления на основе языка браузера
+        function redirectBasedOnLanguage() {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith('ru')) {
+                window.location.href = 'index-ru.html';
+            } else {
+                window.location.href = 'index-en.html';
+            }
+        }
+
+        // Перенаправление при загрузке страницы
+        window.onload = redirectBasedOnLanguage;
+    </script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Добро пожаловать на мой сайт</h1>
-            <p>Я — разработчик Android с опытом работы более [X] лет. Специализируюсь на создании мобильных приложений для различных платформ.</p>
-            <img src="profile.jpg" alt="Мое фото" class="profile-img">
-            <div class="buttons">
-                <a href="about.html" class="btn">Узнать больше</a>
-                <a href="contact.html" class="btn">Связаться со мной</a>
-                <a href="https://t.me/btgc_bot" class="btn telegram-btn">Telegram</a>
-            </div>
-        </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="about.html">Обо мне</a></li>
-            <li><a href="portfolio.html">Портфолио</a></li>
-            <li><a href="services.html">Услуги</a></li>
-            <li><a href="blog.html">Блог</a></li>
-            <li><a href="contact.html">Контакты</a></li>
-        </ul>
-    </nav>
-    <footer>
-        <p>&copy; 2024 Мое имя. Все права защищены.</p>
-    </footer>
+    <p>Перенаправление...</p>
 </body>
 </html>
