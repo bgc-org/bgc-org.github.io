@@ -10,12 +10,17 @@
 <body>
     <header>
         <div class="logo">BGC</div>
+        <button class="language-button" onclick="changeLanguage()">en</button>
     </header>
     <div class="container">
         <div class="content main-content">
             <div class="text-section">
-                <h1>Добро пожаловать на мой сайт</h1>
-                <p>Я — разработчик Android с опытом работы более [X] лет. Специализируюсь на создании мобильных приложений для различных платформ.</p>
+                <h1>Страница команды разработки приложения Cashback funnel</h1>
+                <p>Используй привелегии по максимуму!</p>
+                <div class="button-container">
+                    <a href="https://play.google.com/store/apps/details?id=com.bgc.cashback_funnel_11" class="action-button">Google Play</a>
+                    <!--<button class="action-button">Кнопка 2</button>-->
+                </div>
             </div>
             <div class="video-section">
                 <video id="profileVideo" autoplay loop class="profile-video">
@@ -36,6 +41,10 @@
         </div>
     </footer>
     <script>
+        function changeLanguage() {
+            window.location.href = 'index-en.html';
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             var video = document.getElementById('profileVideo');
 
@@ -47,7 +56,5 @@
             });
         });
     </script>
-</body>
-</html>
 </body>
 </html>

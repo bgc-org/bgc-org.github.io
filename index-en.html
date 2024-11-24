@@ -1,41 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Android Developer Website</title>
+    <title>The page of the Cashback funnel</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Welcome to My Website</h1>
-            <p>I am an Android developer with over [X] years of experience. I specialize in creating mobile applications for various platforms.</p>
-            <img src="profile.jpg" alt="My Photo" class="profile-img">
-        </div>
+        <div class="logo">BGC</div>
+        <button class="language-button" onclick="changeLanguage()">ru</button>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index-en.html">Home</a></li>
-            <li><a href="about-en.html">About Me</a></li>
-            <li><a href="portfolio-en.html">Portfolio</a></li>
-            <li><a href="services-en.html">Services</a></li>
-            <li><a href="blog-en.html">Blog</a></li>
-            <li><a href="contact-en.html">Contact</a></li>
-            <li><a href="index-ru.html">Русский</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <div class="content main-content">
+            <div class="text-section">
+                <h1>The page of the Cashback funnel application development team</h1>
+                <p class="normal-text">Make the most of your privileges!</p>
+                <div class="button-container">
+                    <button class="action-button">Кнопка 1</button>
+                    <button class="action-button">Кнопка 2</button>
+                </div>
+            </div>
+            <div class="video-section">
+                <video id="profileVideo" autoplay loop class="profile-video">
+                    <source src="2024-11-24 00-55-38.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container">
             <div class="contact-info">
-                <p>&copy; 2024 My Name. All Rights Reserved.</p>
-                <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-                <p>Telegram: <a href="https://t.me/yourtelegramchannel" class="telegram-link">@yourtelegramchannel</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/yourlinkedin/" target="_blank">yourlinkedin</a></p>
-                <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">yourgithub</a></p>
+                <p>&copy; 2024 BGC. All rights reserved.</p>
+                <p>Email: <a href="mailto:bgc.org.development@gmail.com">bgc.org.development@gmail.com</a></p>
+                <p>Telegram: <a href="https://t.me/btgc_bot" class="telegram-link">@btgc_bot</a></p>
+                <p>GitHub: <a href="https://github.com/bgc-org" target="_blank">bgc-org</a></p>
             </div>
         </div>
     </footer>
+    <script>
+        function changeLanguage() {
+            window.location.href = 'index-ru.html';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('profileVideo');
+
+            video.addEventListener('ended', function() {
+                setTimeout(function() {
+                    video.currentTime = 0;
+                    video.play();
+                }, 10000); // 5 секунд
+            });
+        });
+    </script>
 </body>
 </html>
