@@ -109,8 +109,8 @@ header {
 
 .profile-video {
     border-radius: 10px;
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: 60%;
     margin-bottom: 30px;
     object-fit: cover; /* Это гарантирует, что видео будет заполнять контейнер, сохраняя пропорции */
 }
