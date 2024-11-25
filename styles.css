@@ -64,8 +64,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Выравниваем верхний край видео */
-    width: 300px; /* Устанавливаем фиксированную ширину */
-    height: 300px; /* Устанавливаем фиксированную высоту */
+    aspect-ratio: 1 / 1; /* Гарантирует квадратную форму */
+    width: 100%; /* Устанавливаем ширину */
 }
 
 .main-content h1 {
@@ -168,7 +168,7 @@ footer {
 
     .video-section {
         width: 100%;
-        height: 100%;
+        aspect-ratio: 1 / 1; /* Гарантирует квадратную форму */
     }
 
     .profile-video {
@@ -206,7 +206,7 @@ footer {
 
     .video-section {
         width: 100%;
-        height: 100%;
+        aspect-ratio: 1 / 1; /* Гарантирует квадратную форму */
     }
 
     .profile-video {
